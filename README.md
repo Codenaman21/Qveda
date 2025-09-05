@@ -1,73 +1,150 @@
-# Welcome to your Lovable project
+# QVEDA - WHERE QUANTUM MEETS CLARITY
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/73e6523c-971b-43b9-8599-66be53d8a31c
+## Problem Statement
+Quantum computing is rapidly emerging as the future of technology — but it remains inaccessible to most. The concepts are abstract, tools are complex, and existing platforms lack intuitive visualization or educational guidance, leaving beginners overwhelmed.
+Students, developers, and enthusiasts in India struggle to learn, build, and experiment with quantum circuits in a way that feels interactive and practical.
+There is a clear need for an accessible, India-first quantum learning and simulation platform that simplifies circuit creation, offers AI-driven insights, and makes quantum computing approachable for everyone.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Proposed Solution
+We simplify quantum computing through an **interactive web platform** that lets users build and simulate quantum circuits visually, without needing advanced expertise.
+Features include:
+- Drag-and-drop tools to create circuits.
+- Real-time simulation and AI-guided insights.
+- India-first solution with global reach.
+- Empowering learners to move from theory to practical application.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/73e6523c-971b-43b9-8599-66be53d8a31c) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+**Frontend:**
+- React + Vite
+- Tailwind CSS
+- Framer Motion
+- ShadCN UI
 
-**Use your preferred IDE**
+**Backend:**
+- Python
+- Flask
+- MySQL
+- Machine Learning Libraries: Numpy, SciPy
+- Qiskit / Cirq / VQiskitAer Simulator
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Tools & Services:**
+- Git & GitHub
+- IBM Quantum Experience
+- Cross-platform quantum simulation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## Workflow
+1. User creates a workflow by dragging & connecting quantum/classical blocks.
+2. The system converts the workflow into executable quantum circuits.
+3. Backend runs the circuits on simulators or quantum hardware.
+4. Results are processed and visualized in an interactive dashboard.
+5. User iterates, refines, or exports the workflow/code for better performance or new experiments.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Future Expansion
+- Integration with classical AI/ML models for hybrid quantum-classical workflows.
+- Expansion into industry-specific modules (finance, pharma, logistics, materials science).
+- Marketplace for quantum algorithms where developers can share and monetize workflows.
+- Enterprise-ready collaboration features for multi-user workflow design and execution.
+- Support for multi-cloud & cross-platform quantum backends (IBM, Google, AWS, IonQ, Rigetti).
 
-# Step 3: Install the necessary dependencies.
-npm i
+---
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+## Installation
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/<your-username>/qveda.git
+cd qveda
+````
+
+### 2. Backend setup
+
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate    # Linux/macOS
+venv\Scripts\activate       # Windows
+pip install -r requirements.txt
+```
+
+### 3. Frontend setup
+
+```bash
+cd ../frontend
+npm install
+```
+
+---
+
+## Deployment
+
+### Backend
+
+```bash
+cd backend
+flask run
+```
+
+### Frontend
+
+```bash
+cd frontend
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Open your browser and navigate to `http://localhost:5173` (or the port Vite shows).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## Project Structure
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```
+qveda/
+├─ backend/
+│  ├─ app.py               # Flask main application
+│  ├─ models.py            # Database models
+│  ├─ routes.py            # API routes
+│  ├─ requirements.txt
+│  └─ utils/               # Helper scripts
+│
+├─ frontend/
+│  ├─ src/
+│  │  ├─ components/       # React components (AboutSection, CTA, etc.)
+│  │  ├─ pages/            # Pages like Home, Dashboard
+│  │  ├─ assets/           # Images, icons, styles
+│  │  ├─ App.jsx
+│  │  └─ main.jsx
+│  ├─ index.html
+│  └─ package.json
+│
+├─ README.md
+└─ .gitignore
+```
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## Contributing
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+1. Fork the repository.
+2. Create your feature branch: `git checkout -b feature/YourFeature`
+3. Commit your changes: `git commit -m 'Add some feature'`
+4. Push to the branch: `git push origin feature/YourFeature`
+5. Open a Pull Request.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/73e6523c-971b-43b9-8599-66be53d8a31c) and click on Share -> Publish.
+## License
 
-## Can I connect a custom domain to my Lovable project?
+This project is licensed under the MIT License.
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
