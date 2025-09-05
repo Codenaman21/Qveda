@@ -106,32 +106,6 @@ Open your browser and navigate to `http://localhost:5173` (or the port Vite show
 
 ---
 
-## Project Structure
-
-```
-qveda/
-├─ backend/
-│  ├─ app.py               # Flask main application
-│  ├─ models.py            # Database models
-│  ├─ routes.py            # API routes
-│  ├─ requirements.txt
-│  └─ utils/               # Helper scripts
-│
-├─ frontend/
-│  ├─ src/
-│  │  ├─ components/       # React components (AboutSection, CTA, etc.)
-│  │  ├─ pages/            # Pages like Home, Dashboard
-│  │  ├─ assets/           # Images, icons, styles
-│  │  ├─ App.jsx
-│  │  └─ main.jsx
-│  ├─ index.html
-│  └─ package.json
-│
-├─ README.md
-└─ .gitignore
-```
-
----
 
 ## Contributing
 
