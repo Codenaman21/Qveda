@@ -91,7 +91,7 @@ npm install
 ### Backend
 
 ```bash
-cd backend
+cd app.py
 flask run
 ```
 
