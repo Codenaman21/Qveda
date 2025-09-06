@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { BlochSphere3D } from "@/components/ui/BlochSphere";
 import { Zap } from 'lucide-react';
 
 interface StateVectorSectionProps {
@@ -62,15 +63,16 @@ export const StateVectorSection: React.FC<StateVectorSectionProps> = ({ results 
           <CardTitle>Bloch Sphere Representation</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="h-64 bg-muted rounded-lg flex items-center justify-center">
-            {/* Placeholder sphere – later we can integrate a real 3D Bloch sphere */}
-            <div className="w-48 h-48 border-2 border-primary rounded-full relative">
-              <div className="absolute inset-0 border border-muted-foreground rounded-full opacity-50"></div>
-              <div className="absolute top-1/2 left-1/2 w-2 h-2 bg-primary rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
-              <div className="absolute top-2 left-1/2 text-xs text-muted-foreground transform -translate-x-1/2">|0⟩</div>
-              <div className="absolute bottom-2 left-1/2 text-xs text-muted-foreground transform -translate-x-1/2">|1⟩</div>
-            </div>
-          </div>
+          {/* Real interactive 3D Bloch sphere */}
+          <BlochSphere3D
+            alphaBeta={{
+              alpha: { real: 1, imag: 0 },
+              beta: { real: 0, imag: 0 },
+            }}
+            showGrid
+            showAxes
+            height={256} // matches your old h-64 = 16rem
+          />
         </CardContent>
       </Card>
 
